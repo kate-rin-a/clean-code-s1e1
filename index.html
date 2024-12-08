@@ -7,53 +7,58 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
-    <main>
-      <h1 class></h1>
-      <header class="aaa">
-        <img src="./eisenhower-matrix.jpg">
-        <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <body class="page">
+    <main class="page__main main">
+      <h1 class="page__title">To-Do List</h1>
+      <header class="main__header main-header aaa">
+        <img class="main-header__img" src="./eisenhower-matrix.jpg">
+        <a class="main-header__link more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </header>
-      <form>
-        <fieldset class="centered-main-page-element"><!-- <div class="centered-main-page-element"> -->
-          <div id="topSectionForAddingElementToList"><!-- <p id="topSectionForAddingElementToList"> -->
-            <legend for="new-task">Add Item</legend><!-- <label for="new-task">Add Item</label> -->
-            <div class="task-row-wrapper">
-              <input id="new-task" class="task" type="text">
-              <button>Add</button>
+      <form class="main__form form">
+        <fieldset class="form__set set centered-main-page-element"><!-- <div class="centered-main-page-element"> -->
+          <div class="set__wrapper" id="topSectionForAddingElementToList"><!-- <p id="topSectionForAddingElementToList"> -->
+            <legend class="set__title" for="new-task">Add Item</legend><!-- <label for="new-task">Add Item</label> -->
+            <div class="set__inner-wrapper task-row-wrapper">
+              <input class="set__input" id="new-task" class="task" type="text">
+              <button class="set__button">Add</button>
             </div>
           </div>
         </fieldset>
-        <fieldset>
-          <legend>Todo</legend><!-- h3 -->
-          <ul id="incompleteTasks">
-            <li>
-              <input type="checkbox">
-              <label class="task">Pay Bills</label>
-              <!-- <input type="text" class="task"> -->
-              <button class="edit">Edit</button>
-              <button class="delete"><img src="./remove.svg"></button>
-            </li>
-            <li class="editMode">
-              <input type="checkbox">
-              <label class="task">Go Shopping</label>
-              <!-- <input type="text" value="Go Shopping" class="task"> -->
-              <button class="edit">Save</button>
-            </li>
-          </ul>
+        <fieldset class="form__set set centered-main-page-element"><!-- <div class="centered-main-page-element"> -->
+          <div class="set__wrapper"id="topSectionForAddingElementToList"><!-- <p id="topSectionForAddingElementToList"> -->
+            <legend class="set__title">Todo</legend><!-- h3 -->
+            <ul class="set__list set__list--incomplete set-list" id="incompleteTasks">
+              <li class="set-list__item">
+                <input class="set__input" type="checkbox">
+                <label class="set__label task">Pay Bills</label>
+                <!-- <input type="text" class="task"> -->
+                <button class="set__button set__button--edit edit">Edit</button>
+                <button class="set__button set__button--delete delete"><img src="./remove.svg"></button>
+              </li>
+              <li class="set-list__item editMode">
+                <input class="set__input" type="checkbox">
+                <label class="set__label task">Go Shopping</label>
+                <!-- <input type="text" value="Go Shopping" class="task"> -->
+                <button class="set__button set__button--edit edit">Save</button>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset>
-          <legend>Completed</legend><!-- h3 -->
-          <ul id="completed-tasks">
-            <li>
-              <input type="checkbox" checked>
-              <label class="task">See the Doctor</label>
-              <!-- <input type="text" class="task"> -->
-              <button class="edit">Edit</button>
-              <button class="delete"><img src="./remove.svg"></button>
-            </li>
-          </ul>
+        <fieldset class="form__set set centered-main-page-element">
+          <div class="set__wrapper"id="topSectionForAddingElementToList">
+            <legend class="set__title">Completed</legend><!-- h3 -->
+            <ul class="set__list set__list--complete set-list" id="completed-tasks">
+              <li class="set-list__item">
+                <input class="set__input" type="checkbox" checked>
+                <label class="set__label task">See the Doctor</label>
+                <!-- <input type="text" class="task"> -->
+                <button class="set__button set__button--edit edit">Edit</button>
+                <button class="set__button set__button--delete delete"><img src="./remove.svg"></button>
+              </li>
+            </ul>
+          </div>
         </fieldset>
+        </div>
       </form>
     </main>
     <script SRC="app.js"></script>
