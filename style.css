@@ -20,9 +20,11 @@
     display: block;
     text-align: right;
 }
+
 .main-header__img {
     width: 100%;
 }
+
 .main-header__link {
     font-family: fantasy, cursive;
 }
@@ -36,6 +38,7 @@
     width: 500px;
     margin: 0 auto;
 }
+
 .form__set {
   display: block;
   width: 100%;
@@ -156,6 +159,7 @@
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 .set__button:hover {
     color: #3a3A3a;
 }
@@ -165,6 +169,7 @@
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .delete__log:hover {
     transform: rotateZ(0);
 }
