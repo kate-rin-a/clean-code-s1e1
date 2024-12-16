@@ -10,34 +10,34 @@
   <body class="page__body">
     <main class="page__main main">
       <h1 class="page__title">To-Do List</h1>
-      <header class="main__header main-header aaa">
-        <img class="main-header__img" src="./eisenhower-matrix.jpg" alt="To-Do List logo">
-        <a class="main-header__link more__inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <header class="main__header main-header">
+        <img class="main-header__img" src="./eisenhower-matrix.jpg" alt="To-Do list logo">
+        <a class="main-header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </header>
       <div class="main__form form">
-        <fieldset class="form__set form__set--add set centered-main-page-element">
+        <fieldset class="form__set form__set--add set">
             <legend class="set__title">Add Item</legend>
             <div class="set__inner-wrapper">
               <input class="set__input" id="new-task" type="text">
               <button class="set__button set__button--add">Add</button>
             </div>
         </fieldset>
-        <fieldset class="form__set form__set--incomplete set centered-main-page-element">
+        <fieldset class="form__set form__set--incomplete set">
           <legend class="set__title">Todo</legend>
           <ul class="set__list set-list" id="incompleteTasks">
             <li class="set__item set__item--edit set-item">
-              <div class="set__inner-wrapper task-row-wrapper">
-                <input class="set-item__input set-item__input--checkbox" type="checkbox"> <!-- set__input -->
-                <label class="set-item__label task"></label>
+              <div class="set__inner-wrapper">
+                <input class="set-item__input set-item__input--checkbox" type="checkbox">
+                <label class="set-item__label"></label>
                 <input class="set-item__input set-item__input--text" value="Pay Bills">
                 <button class="set__button set__button--edit edit">Save</button>
                 <button class="set__button set__button--delete delete"><img class="delete__log" src="./remove.svg" alt="Button delete"></button>
               </div>
             </li>
-            <li class="set__item set-item editMode">
-              <div class="set__inner-wrapper task-row-wrapper">
+            <li class="set__item set-item">
+              <div class="set__inner-wrapper">
                 <input class="set-item__input set-item__input--checkbox" type="checkbox">
-                <label class="set-item__label task">Go shopping</label>
+                <label class="set-item__label">Go shopping</label>
                 <input class="set-item__input set-item__input--text" type="text" value="Go Shopping">
                 <button class="set__button set__button--edit">Edit</button>
                 <button class="set__button set__button--delete delete"><img class="delete__log" src="./remove.svg" alt="Button delete"></button>
@@ -45,11 +45,11 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__set form__set--complete set centered-main-page-element">
+        <fieldset class="form__set form__set--complete set">
           <legend class="set__title">Completed</legend>
           <ul class="set__list set-list" id="completed-tasks">     
             <li class="set__item set-item">
-              <div class="set__inner-wrapper task-row-wrapper ">
+              <div class="set__inner-wrapper">
                 <input class="set-item__input set-item__input--checkbox" type="checkbox" checked>
                 <label class="set-item__label">See the Doctor</label>
                 <input class="set-item__input set-item__input--text" type="text" value="See the Doctor">
